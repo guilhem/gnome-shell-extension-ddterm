@@ -21,7 +21,7 @@
 
 /* exported ConnectionSet */
 
-class ConnectionSet {
+var ConnectionSet = class {
     constructor() {
         this.connections = new Map();
     }
@@ -75,4 +75,4 @@ class ConnectionSet {
         else
             printerr(`No handler with id=${match_handler_id} found for object=${match_object} in group ${this}`);
     }
-}
+};
